@@ -1,0 +1,24 @@
+<svg id="colors" xmlns="http://www.w3.org/2000/svg" width="21" height="19.269" viewBox="0 0 21 19.269">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6bbe66;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #ff4141;
+      }
+
+      .cls-3 {
+        fill: #00a1f1;
+      }
+    </style>
+  </defs>
+  <path id="Path_421" data-name="Path 421" class="cls-1" d="M9.683,56.524A6.009,6.009,0,1,1,3.2,46.46a7.133,7.133,0,0,0,4.689,4.854q-.015.231-.015.467a7.1,7.1,0,0,0,1.813,4.744Z" transform="translate(0 -38.52)"/>
+  <path id="Path_422" data-name="Path 422" class="cls-2" d="M64.578,50.1a6.009,6.009,0,1,1-12.018,0c0-.07,0-.14,0-.21a7.279,7.279,0,0,0,1.065.079,7.124,7.124,0,0,0,6.944-5.535A6.011,6.011,0,0,1,64.578,50.1Z" transform="translate(-43.578 -36.837)"/>
+  <path id="Path_423" data-name="Path 423" class="cls-3" d="M35.668,6.009A6.009,6.009,0,1,1,29.659,0a6.008,6.008,0,0,1,6.009,6.009Z" transform="translate(-19.608)"/>
+</svg>

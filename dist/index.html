@@ -1,0 +1,256 @@
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="/style.css">
+  <title>Vohoo</title>
+  <style>
+    html {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+
+<body>
+
+  <script src="./webchat.js"></script>
+
+  <script>
+    const configUrl = 'https://endpoint-trial.cognigy.ai/730d81303d219dc1249a3d07ee6890f3b15b8bbc23258f0dbf534522d449b007'
+
+   // const configUrl = 'https://endpoint-trial.cognigy.ai/0f9d0cd36a68344c6ad8f3200a74ff2935925410b9495e8477b1c5fe9a1d8ae1'
+
+    // Code commented for Session ID
+    // Initialize a sessionId, undefined by default.
+    // let sessionId, userId;
+
+    // in case LocalStorage is supported...
+    // if (window.localStorage) {
+      // try to load a previously stored sessionId from the LocalStorage
+      // sessionId = window.localStorage.getItem("sessionId");
+      // userId = window.localStorage.getItem("userId");
+      // in case there was no previously stored sessionId,
+      // generate one and store it into LocalStorage
+    //   if (!sessionId) {
+    //     sessionId = "session-" + Date.now() * Math.random();
+    //     localStorage.setItem("sessionId", sessionId);
+    //   }
+    //   if (!userId) {
+    //     userId = "userId-" + Date.now() * Math.random();
+    //     localStorage.setItem("userId", userId);
+    //   }
+    // }
+
+    
+    const settings = {
+      disableBranding: true,
+      headerLogoUrl:'./images/agentAvatar.jpg',
+      enableTypingIndicator: true,
+      unreadMessageTitleText: true,
+      disableTextInputSanitization: true,
+      disableHtmlInput: false,
+      enableUnreadMessageSound: true,
+      enableUnreadMessageBadge: true,
+      enableUnreadMessagePreview: true,
+      enableUnreadMessageTitleIndicator: true,
+      showEngagementMessagesInChat: true,
+      engagementMessageDelay: 5000,
+      getStartedText: "Welcome",
+      showQuickReplyPayload: true, // Show Quick Reply payload in the chat history instead of the button title, which is shown by default
+      disableInputAutocomplete: true, // New in 2.37.0. Turns off browser's suggestions on message text
+      disableInputAutogrow: false, // New in 2.37.0. True will make the input one line with horizontal scroll in case of a long text 
+      inputAutogrowMaxRows: 5, // How many rows of text should the message input grow to before stopping and showing vertical scrollbar
+      bayer: {
+        displayLanguageSelectMenu: true,
+        displayInputField: true,
+        displayNotificationMessage: false,
+        defaultLanguage: 'en',
+        defaultScreenSize: 'webchat-small',
+        defaultScreenColor: 'webchat-blue',
+        showMenu1MenuItem: true,
+        showMenu1MenuIcon: './images/icons/about.svg',
+        showMenu2MenuItem: true,
+        showMenu2MenuIcon: './images/icons/privacy.svg',
+        showMenu3MenuItem: true,
+        showMenu3MenuIcon: './images/icons/resize.svg',
+        showMenu3NestedMenu1Item: true,
+        showMenu3NestedMenu2Item: true,
+        showMenu3NestedMenu3Item: true,
+        showMenu3NestedMenu4Item: false,
+        showMenu4MenuItem: true,
+        showMenu4MenuIcon: './images/icons/color.svg',
+        showMenu4NestedMenu1Item: true,
+        showMenu4NestedMenu2Item: true,
+        showMenu4NestedMenu3Item: true,
+        showMenu5MenuItem: true,
+        showMenu5MenuIcon: './images/icons/copyright.svg',
+        showMenu6MenuItem: true,
+        showMenu6MenuIcon: './images/icons/condition-of-use.svg',
+        //showMenu7MenuItem: true,
+        screenSizeOptions: [
+          { smallScreenSize: 'webchat-small' },
+          { mediumScreenSize: 'webchat-medium' },
+          { largeScreenSize: 'webchat-large' },
+        ],
+        screenColorOptions: [
+          { redScreenColor: 'webchat-red' },
+          { blueScreenColor: 'webchat-blue' },
+          { greenScreenColor: 'webchat-green' },
+        ],
+        languageOptions: [
+          { title: 'English', ariaLabel: 'english', code: 'en', flagLink: './images/flags/England.png'}, 
+          {  title: 'Spanish', ariaLabel: 'spanish', code: 'es', flagLink: './images/flags/England.png'},
+        
+        
+        ]
+      },
+      translations: {
+        en: {
+          //UI_HEADER_TITLE: "AllWritty",
+          UI_HEADER_TITLE: "Vohoo",
+          UI_INPUT_PLACEHOLDER: "Write a reply",
+          UI_INPUT_LANGUAGE: "en",
+          UI_INPUT_LOCALIZATION: "en_US",
+
+
+          UI_NOTIFICATION_MESSAGE_TITLE: "Bot will be down.",
+          UI_NOTIFICATION_MESSAGE_TEXT: "Due to patch upgrade, bot will not be available for 3 hours.",
+
+          UI_NOTIFICATIONS_READ_MORE_BUTTON: "Read More",
+          UI_NOTIFICATIONS_OK_BUTTON: "OK",
+
+          UI_MENU_1_TITLE: "About",
+          UI_MENU_1_DIALOG_TITLE: "About this Chatbot",
+          UI_MENU_1_DIALOG_TEXT: "Welcome! ",
+
+          UI_MENU_2_TITLE: "Privacy",
+          UI_MENU_2_DIALOG_TITLE: "Privacy Statement",
+          UI_MENU_2_DIALOG_TEXT: "<h2>Use of Q&A chatbots:</h2> You can exchange messages with the Q&A chatbot (hereinafter 'chatbot') on our website. You must be aware that any personal information you provide will be processed by us and our service providers. For a conversation,a so-called 'Session ID' is created, which does not allow any personal identification. When the chatbot is closed the 'Session ID' will be terminated. If you are starting a new conversation with the chatbot, a new 'Session ID' will be created. We process the “Session-ID” and the information you provide to answer your question (Art. 6(1)(b) GeneralData Protection Regulation). Based on our legitimate interest we store the 'Session ID' and the information you have provided for a period of 6 months in order to further improve our chatbot according to the needs of the users(Art. 6(1)(f) General Data Protection Regulation).",
+
+          UI_MENU_3_TITLE: "Resize",
+          UI_MENU_3_DIALOG_TITLE: "NA",
+          UI_MENU_3_DIALOG_TEXT: "Try this <a href='https://bayernet.int.bayer.com/en/' target='_blank'>link</a>",
+
+          UI_MENU_3_NESTED_1_TITLE: "Small",
+          UI_MENU_3_NESTED_1_DIALOG_TITLE: "NA",
+          UI_MENU_3_NESTED_1_DIALOG_TEXT: "Try this <a href='https://bayernet.int.bayer.com/en/' target='_blank'>link</a>",
+
+          UI_MENU_3_NESTED_2_TITLE: "Medium",
+          UI_MENU_3_NESTED_2_DIALOG_TITLE: "NA",
+          UI_MENU_3_NESTED_2_DIALOG_TEXT: "Try this <a href='https://bayernet.int.bayer.com/en/' target='_blank'>link</a>",
+
+          UI_MENU_3_NESTED_3_TITLE: "Large",
+          UI_MENU_3_NESTED_3_DIALOG_TITLE: "NA",
+          UI_MENU_3_NESTED_3_DIALOG_TEXT: "Try this <a href='https://bayernet.int.bayer.com/en/' target='_blank'>link</a>",
+
+          UI_MENU_3_NESTED_4_TITLE: "Detach",
+          UI_MENU_3_NESTED_4_DIALOG_TITLE: "NA",
+          UI_MENU_3_NESTED_4_DIALOG_TEXT: "Try this <a href='https://bayernet.int.bayer.com/en/' target='_blank'>link</a>",
+
+          UI_MENU_4_TITLE: "Color Schema",
+          UI_MENU_4_DIALOG_TITLE: "NA",
+          UI_MENU_4_DIALOG_TEXT: "Try this <a href='https://bayernet.int.bayer.com/en/' target='_blank'>link</a>",
+
+          UI_MENU_4_NESTED_1_TITLE: "Red",
+          UI_MENU_4_NESTED_1_DIALOG_TITLE: "NA",
+          UI_MENU_4_NESTED_1_DIALOG_TEXT: "Try this <a href='https://bayernet.int.bayer.com/en/' target='_blank'>link</a>",
+
+          UI_MENU_4_NESTED_2_TITLE: "Blue",
+          UI_MENU_4_NESTED_2_DIALOG_TITLE: "NA",
+          UI_MENU_4_NESTED_2_DIALOG_TEXT: "Try this <a href='https://bayernet.int.bayer.com/en/' target='_blank'>link</a>",
+
+          UI_MENU_4_NESTED_3_TITLE: "Green",
+          UI_MENU_4_NESTED_3_DIALOG_TITLE: "NA",
+          UI_MENU_4_NESTED_3_DIALOG_TEXT: "Try this <a href='https://bayernet.int.bayer.com/en/' target='_blank'>link</a>",
+
+          UI_MENU_5_TITLE: "Imprint",
+          UI_MENU_5_DIALOG_TITLE: "Imprint",
+          UI_MENU_5_DIALOG_TEXT: "Use of Q&A chatbots:</h2> You can exchange messages with the Q&A chatbot (hereinafter 'chatbot') on our website. You must be aware that any personal information you provide will be processed by us and our service providers. For a conversation,a so-called 'Session ID' is created, which does not allow any personal identification. When the chatbot is closed the 'Session ID' will be terminated. If you are starting a new conversation with the chatbot, a new 'Session ID' will be created. We process the “Session-ID” and the information you provide to answer your question (Art. 6(1)(b) GeneralData Protection Regulation). Based on our legitimate interest we store the 'Session ID' and the information you have provided for a period of 6 months in order to further improve our chatbot according to the needs of the users(Art. 6(1)(f) General Data Protection Regulation).",
+
+          UI_MENU_6_TITLE: "Conditions of Use",
+          UI_MENU_6_DIALOG_TITLE: "Conditions of Use",
+          UI_MENU_6_DIALOG_TEXT: "Use of Q&A chatbots:</h2> You can exchange messages with the Q&A chatbot (hereinafter 'chatbot') on our website. You must be aware that any personal information you provide will be processed by us and our service providers. For a conversation,a so-called 'Session ID' is created, which does not allow any personal identification. When the chatbot is closed the 'Session ID' will be terminated. If you are starting a new conversation with the chatbot, a new 'Session ID' will be created. We process the “Session-ID” and the information you provide to answer your question (Art. 6(1)(b) GeneralData Protection Regulation). Based on our legitimate interest we store the 'Session ID' and the information you have provided for a period of 6 months in order to further improve our chatbot according to the needs of the users(Art. 6(1)(f) General Data Protection Regulation).",
+
+        },
+        es: {
+          //UI_HEADER_TITLE: "AllWritty",
+          UI_HEADER_TITLE: "TinTin",
+          UI_INPUT_PLACEHOLDER: "Write a reply",
+          UI_INPUT_LANGUAGE: "es",
+          UI_INPUT_LOCALIZATION: "en_US",
+
+
+          UI_NOTIFICATION_MESSAGE_TITLE: "Bot will be down.",
+          UI_NOTIFICATION_MESSAGE_TEXT: "Due to patch upgrade, bot will not be available for 3 hours.",
+
+          UI_NOTIFICATIONS_READ_MORE_BUTTON: "Read More",
+          UI_NOTIFICATIONS_OK_BUTTON: "OK",
+
+          UI_MENU_1_TITLE: "About",
+          UI_MENU_1_DIALOG_TITLE: "About this Chatbot",
+          UI_MENU_1_DIALOG_TEXT: "Welcome! ",
+
+          UI_MENU_2_TITLE: "Privacy",
+          UI_MENU_2_DIALOG_TITLE: "Privacy Statement",
+          UI_MENU_2_DIALOG_TEXT: "<h2>Use of Q&A chatbots:</h2> You can exchange messages with the Q&A chatbot (hereinafter 'chatbot') on our website. You must be aware that any personal information you provide will be processed by us and our service providers. For a conversation,a so-called 'Session ID' is created, which does not allow any personal identification. When the chatbot is closed the 'Session ID' will be terminated. If you are starting a new conversation with the chatbot, a new 'Session ID' will be created. We process the “Session-ID” and the information you provide to answer your question (Art. 6(1)(b) GeneralData Protection Regulation). Based on our legitimate interest we store the 'Session ID' and the information you have provided for a period of 6 months in order to further improve our chatbot according to the needs of the users(Art. 6(1)(f) General Data Protection Regulation).",
+
+          UI_MENU_3_TITLE: "Resize",
+          UI_MENU_3_DIALOG_TITLE: "NA",
+          UI_MENU_3_DIALOG_TEXT: "Try this <a href='https://bayernet.int.bayer.com/en/' target='_blank'>link</a>",
+
+          UI_MENU_3_NESTED_1_TITLE: "Small",
+          UI_MENU_3_NESTED_1_DIALOG_TITLE: "NA",
+          UI_MENU_3_NESTED_1_DIALOG_TEXT: "Try this <a href='https://bayernet.int.bayer.com/en/' target='_blank'>link</a>",
+
+          UI_MENU_3_NESTED_2_TITLE: "Medium",
+          UI_MENU_3_NESTED_2_DIALOG_TITLE: "NA",
+          UI_MENU_3_NESTED_2_DIALOG_TEXT: "Try this <a href='https://bayernet.int.bayer.com/en/' target='_blank'>link</a>",
+
+          UI_MENU_3_NESTED_3_TITLE: "Large",
+          UI_MENU_3_NESTED_3_DIALOG_TITLE: "NA",
+          UI_MENU_3_NESTED_3_DIALOG_TEXT: "Try this <a href='https://bayernet.int.bayer.com/en/' target='_blank'>link</a>",
+
+          UI_MENU_3_NESTED_4_TITLE: "Detach",
+          UI_MENU_3_NESTED_4_DIALOG_TITLE: "NA",
+          UI_MENU_3_NESTED_4_DIALOG_TEXT: "Try this <a href='https://bayernet.int.bayer.com/en/' target='_blank'>link</a>",
+
+          UI_MENU_4_TITLE: "Color Schema",
+          UI_MENU_4_DIALOG_TITLE: "NA",
+          UI_MENU_4_DIALOG_TEXT: "Try this <a href='https://bayernet.int.bayer.com/en/' target='_blank'>link</a>",
+
+          UI_MENU_4_NESTED_1_TITLE: "Red",
+          UI_MENU_4_NESTED_1_DIALOG_TITLE: "NA",
+          UI_MENU_4_NESTED_1_DIALOG_TEXT: "Try this <a href='https://bayernet.int.bayer.com/en/' target='_blank'>link</a>",
+
+          UI_MENU_4_NESTED_2_TITLE: "Blue",
+          UI_MENU_4_NESTED_2_DIALOG_TITLE: "NA",
+          UI_MENU_4_NESTED_2_DIALOG_TEXT: "Try this <a href='https://bayernet.int.bayer.com/en/' target='_blank'>link</a>",
+
+          UI_MENU_4_NESTED_3_TITLE: "Green",
+          UI_MENU_4_NESTED_3_DIALOG_TITLE: "NA",
+          UI_MENU_4_NESTED_3_DIALOG_TEXT: "Try this <a href='https://bayernet.int.bayer.com/en/' target='_blank'>link</a>",
+
+          UI_MENU_5_TITLE: "Imprint",
+          UI_MENU_5_DIALOG_TITLE: "Imprint",
+          UI_MENU_5_DIALOG_TEXT: "Use of Q&A chatbots:</h2> You can exchange messages with the Q&A chatbot (hereinafter 'chatbot') on our website. You must be aware that any personal information you provide will be processed by us and our service providers. For a conversation,a so-called 'Session ID' is created, which does not allow any personal identification. When the chatbot is closed the 'Session ID' will be terminated. If you are starting a new conversation with the chatbot, a new 'Session ID' will be created. We process the “Session-ID” and the information you provide to answer your question (Art. 6(1)(b) GeneralData Protection Regulation). Based on our legitimate interest we store the 'Session ID' and the information you have provided for a period of 6 months in order to further improve our chatbot according to the needs of the users(Art. 6(1)(f) General Data Protection Regulation).",
+
+          UI_MENU_6_TITLE: "Conditions of Use",
+          UI_MENU_6_DIALOG_TITLE: "Conditions of Use",
+          UI_MENU_6_DIALOG_TEXT: "Use of Q&A chatbots:</h2> You can exchange messages with the Q&A chatbot (hereinafter 'chatbot') on our website. You must be aware that any personal information you provide will be processed by us and our service providers. For a conversation,a so-called 'Session ID' is created, which does not allow any personal identification. When the chatbot is closed the 'Session ID' will be terminated. If you are starting a new conversation with the chatbot, a new 'Session ID' will be created. We process the “Session-ID” and the information you provide to answer your question (Art. 6(1)(b) GeneralData Protection Regulation). Based on our legitimate interest we store the 'Session ID' and the information you have provided for a period of 6 months in order to further improve our chatbot according to the needs of the users(Art. 6(1)(f) General Data Protection Regulation).",
+
+        }
+      }
+    }
+
+    // Code commented to remove storage of session ID 
+    // initWebchat(configUrl, { settings: settings, userId, sessionId }).then(webchat => {
+    initWebchat(configUrl, { settings: settings }).then(webchat => {
+      window.cognigyWebchat = webchat
+      webchat.open()
+    })
+
+  </script>
+</body>
+
+</html>

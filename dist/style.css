@@ -1,0 +1,244 @@
+
+ [data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-red .webchat-buttons-template-root {
+
+  background: #D30F4B !important;
+  width:100%;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-blue .webchat-buttons-template-root {
+
+  background: #0091DF !important;
+  width:100%;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-green .webchat-buttons-template-root {
+  background: #66b512 !important;
+  width:100%;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-red .webchat-buttons-template-header {
+  
+  background: #D30F4B !important;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-blue .webchat-buttons-template-header {
+  
+  background: #0091DF !important;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-green .webchat-buttons-template-header {
+  background: #66b512 !important;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-red .webchat-carousel-template-button {
+  color: #D30F4B !important;
+  
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-blue .webchat-carousel-template-button {
+  color: #0091DF !important;
+  
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-green .webchat-carousel-template-button {
+  color: #66b512 !important;
+  
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-red .webchat-buttons-template-button {
+  background-color: #fffffe;
+  color: #D30F4B !important;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-blue .webchat-buttons-template-button {
+  background-color: #fffffe;
+  color: #0091DF !important;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-green .webchat-buttons-template-button {
+  background-color: #fffffe;
+  color: #66b512 !important;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-red .webchat-list-template-global-button {
+  background-color: #fffffe;
+  color:#D30F4B !important ;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-blue .webchat-list-template-global-button {
+  background-color: #fffffe;
+  color:#0091DF !important ;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-green .webchat-list-template-global-button {
+  background-color: #fffffe;
+  color:#66b512 !important ;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-red .ratingHeader {
+   background: #D30F4B
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-blue .ratingHeader {
+   background: #0091DF;
+
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-green .ratingHeader {
+   background: #66b512
+}
+/*CSS for Mozilla*/
+[data-cognigy-webchat-root] .cognigy-webchat-h6cwia{
+   flex: -moz-available;
+}
+[data-cognigy-webchat-root] .cognigy-webchat-16acylg{
+   background: none !important;
+}
+/* [data-cognigy-webchat-root] .webchat-input-button-menu{
+   padding: 100px;
+} */
+/* [data-cognigy-webchat-root] .cognigy-webchat-1fddooc{
+   display: none !important;
+} */
+/* [data-cognigy-webchat-root] .cognigy-webchat-16acylg svg{
+   background: none !important;
+} */
+
+ /* css for color schema */
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-red .webchat-header-bar {
+  /* header */
+   background: #D30F4B;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-blue .webchat-header-bar {
+   background:  #0091DF;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-green .webchat-header-bar {
+   background: #66b512;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-red .webchat-quick-reply-template-header-message{
+  /*messages/chat */
+   background: #D30F4B;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-blue .webchat-quick-reply-template-header-message {
+   background: #0091DF;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-green .webchat-quick-reply-template-header-message {
+   background: #66b512;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-red .regular-message.bot{
+   background: #D30F4B;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-blue .regular-message.bot {
+   background: #0091DF;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-green .regular-message.bot {
+   background: #66b512;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-red .webchat-typing-indicator{
+  /* typing icon*/
+   background: #D30F4B;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-blue .webchat-typing-indicator {
+   background: #0091DF;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-green .webchat-typing-indicator {
+   background: #66b512;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-red .webchat-quick-reply-template-reply{
+   color: #D30F4B;
+   border: 1px solid #D30F4B;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-blue .webchat-quick-reply-template-reply {
+   color: #0091DF;
+   border: 1px solid #0091DF;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-green .webchat-quick-reply-template-reply {
+   color: #66b512;
+   border: 1px solid #66b512;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-red .webchat-header-close-button{
+  /* header menu icon*/
+   background: #D30F4B;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-blue .webchat-header-close-button {
+   background: #0091DF;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-green .webchat-header-close-button {
+   background: #66b512;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-red .MuiButton-textPrimary{
+  /* header menu icon*/
+   background: #D30F4B;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-blue .webchat-header-close-button {
+   background: #0091DF;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat]#webchat-green .webchat-header-close-button {
+   background: #66b512;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat-toggle].webchat-toggle-button {
+   display: none;
+}
+/* The down 3 css has to be changed for each screen size */
+/* For small screen size */
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat-small .webchat-message-row.bot {
+   align-items: flex-start !important;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat-small .webchat-avatar {
+   background-image: url(/images/agentAvatar.jpg);
+   height: 50px;
+   border: 0px;
+   flex-basis: 50px;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat-small .webchat-avatar.user {
+   background-image: url(/images/personAvatar.png);
+   height: 50px;
+   border: 0px;
+   flex-basis: 50px;
+}
+@media only screen and (min-width: 900px) {
+   [data-cognigy-webchat-root] [data-cognigy-webchat].webchat-small {
+       top: 1%;
+       left: 30%;
+       width: 40%;
+       height: 98%;
+       border-radius: 16px;
+       box-shadow: 0 5px 18px 0 rgba(151, 124, 156, 0.2), 0 5px 32px 0 rgba(203, 195, 212, 0.2), 0 8px 58px 0 rgba(216, 212, 221, 0.1);
+  }
+}
+/* For medium screen size */
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat-medium .webchat-message-row.bot {
+   align-items: flex-start !important;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat-medium .webchat-avatar {
+   background-image: url(/images/agentAvatar.jpg);
+   height: 50px;
+   border: 0px;
+   flex-basis: 50px;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat-medium .webchat-avatar.user {
+   background-image: url(/images/personAvatar.png);
+   height: 50px;
+   border: 0px;
+   flex-basis: 50px;
+}
+@media only screen and (min-width: 900px) {
+   [data-cognigy-webchat-root] [data-cognigy-webchat].webchat-medium {
+       top: 1%;
+       left: 20%;
+       width: 60%;
+       height: 98%;
+       border-radius: 16px;
+       box-shadow: 0 5px 18px 0 rgba(151, 124, 156, 0.2), 0 5px 32px 0 rgba(203, 195, 212, 0.2), 0 8px 58px 0 rgba(216, 212, 221, 0.1);
+  }
+}
+/* For large screen size */
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat-large .webchat-message-row.bot {
+   align-items: flex-start !important;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat-large .webchat-avatar {
+   background-image: url(/images/agentAvatar.jpg);
+   height: 50px;
+   border: 0px;
+   flex-basis: 50px;
+}
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat-large .webchat-avatar.user {
+   background-image: url(/dev/images/personAvatar.png);
+   height: 50px;
+   border: 0px;
+   flex-basis: 50px;
+}
+@media only screen and (min-width: 900px) {
+   [data-cognigy-webchat-root] [data-cognigy-webchat].webchat-large {
+       top: 1%;
+       left: 0;
+       width: 100%;
+       height: 98%;
+       border-radius: 16px;
+       box-shadow: 0 5px 18px 0 rgba(151, 124, 156, 0.2), 0 5px 32px 0 rgba(203, 195, 212, 0.2), 0 8px 58px 0 rgba(216, 212, 221, 0.1);
+  }
+}

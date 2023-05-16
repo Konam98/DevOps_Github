@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #707070;
+      }
+
+      .cls-1 {
+        stroke-width: 1.5px;
+      }
+
+      .cls-2 {
+        fill: #707070;
+        stroke-width: 0.3px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_22" data-name="Group 22" transform="translate(-459 -84)">
+    <g id="Ellipse_37" data-name="Ellipse 37" class="cls-1" transform="translate(459 84)">
+      <circle class="cls-3" cx="10" cy="10" r="10"/>
+      <circle class="cls-4" cx="10" cy="10" r="9.25"/>
+    </g>
+    <g id="lock-line" transform="translate(439.417 99)">
+      <path id="Path_3361" data-name="Path 3361" class="cls-2" d="M.662,3.471h.22V2.808A2.856,2.856,0,0,1,1.673.828a2.618,2.618,0,0,1,3.821,0,2.857,2.857,0,0,1,.791,1.98v.663H6.5a.664.664,0,0,1,.662.662V8.668a.664.664,0,0,1-.662.662H.662A.664.664,0,0,1,0,8.668V4.133a.664.664,0,0,1,.662-.662ZM3.341,6.629l-.318.834H4.144l-.295-.845a.581.581,0,1,0-.508.011ZM1.348,3.471H5.819V2.808a2.39,2.39,0,0,0-.66-1.657,2.156,2.156,0,0,0-3.152,0,2.39,2.39,0,0,0-.66,1.657v.663ZM6.5,3.937H.662a.2.2,0,0,0-.2.2V8.668a.2.2,0,0,0,.2.2H6.5a.2.2,0,0,0,.2-.2V4.133a.2.2,0,0,0-.2-.2Z" transform="translate(26 -10)"/>
+    </g>
+  </g>
+</svg>
